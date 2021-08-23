@@ -1,0 +1,6 @@
+title: "JTD"
+remote_theme: pmarsceill/just-the-docs
+baseurl: "/jtd"
+url: "https://pdmosses.github.io"
+plugins:
+  - jekyll-remote-theme
