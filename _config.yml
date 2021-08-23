@@ -4,3 +4,6 @@ baseurl: "/jtd"
 url: "https://pdmosses.github.io"
 plugins:
   - jekyll-remote-theme
+aux_links:
+  "JTD on GitHub":
+    - "//github.com/pdmosses/jtd"
