@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+rm -f Gemfile.lock
+JEKYLL_LOCAL=true bundle exec jekyll serve \
+  --config _config_local.yml \
+  --destination _site/local_repo \
+  --port 4002
