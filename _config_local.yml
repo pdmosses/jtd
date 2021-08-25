@@ -1,5 +1,11 @@
-# For local development and testing, use the option
-# --config _config.yml,_config_local.yml
-# See https://stackoverflow.com/a/27400343
-
-url: http://localhost/
+title: JTD
+theme: just-the-docs
+exclude:
+  - _site/4.1.1
+  - _site/4.2.0
+  - _site/local_repo
+  - README.md
+disable_disk_cache: true
+aux_links:
+  "JTD on GitHub":
+    - "//github.com/pdmosses/jtd"

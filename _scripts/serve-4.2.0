@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+rm -f Gemfile.lock
+JEKYLL_VERSION="~> 4.2.0" bundle exec jekyll serve \
+  --config _config_local.yml \
+  --destination _site/4.2.0 \
+  --port 4001

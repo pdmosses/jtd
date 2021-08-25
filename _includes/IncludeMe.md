@@ -1,1 +1,1 @@
-This content should appear in `_site/assets/js/search-data.json`.
+I should see this content while debugging.

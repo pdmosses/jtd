@@ -1,12 +1,25 @@
-# jtd
+# JTD
 
-Test Just-the-Docs search data
+## Test regression between Jekyll versions v4.1.1..v4.2.0
 
-To reproduce the results shown in `assets/jekyll-4.1.1/`:
+### Requirements
 
-1. Copy `assets/jekyll-4.1.1/Gemfile` to the `jtd` folder.
-2. Run `bundle update`.
-3. Run `bundle exec jekyll serve --config _config.yml,_config_local.yml`.
-4. Check that `_site/assets/js/search-data.json` has the same contents as `assets/jekyll-4.1.1/search-data.json`.
+- Jekyll versions 4.2.0 (and 4.1.1 for comparison) installed in the test environment.
+- `just-the-docs` theme installed locally.
+- `bash` or `sh` executables (*Optional*).
 
-Similarly for `assets/jekyll-4.2.0/`.
+### Repro steps
+
+- Clone this repository.
+- Open two terminal windows, both with the clone destination as the *current directory*.
+- In the first terminal window, run:
+    ```
+    bash _scripts/serve-4.1.1
+    ```
+- Preview served debug output at `http://localhost:4000/debug/`
+- In the second terminal window, run:
+    ```
+    bash _scripts/serve-4.2.0
+    ```
+- Preview served debug output at `http://localhost:4001/debug/` in a new tab.
+- Compare contents in the two tabs.
